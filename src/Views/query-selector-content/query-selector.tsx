@@ -1,14 +1,26 @@
 import React from "react";
 import FilterControl from "react-filter-control";
 import {fields, filterValue} from "./data";
+import {useNavigate} from "react-router";
 
 function QuerySelector() {
+    const navigate = useNavigate();
+    const clickIem = (id: string) => {
+        navigate("/select");
+    };
+    const isloading = true;
+    const data = ['1', '2', '3'];
     return (
-        <FilterControl
-            filterValue={filterValue}
-            fields={fields}
-            onFilterValueChanged={handleFilterValueChange}
-        />
+       <div>
+           <FilterControl
+               filterValue={filterValue}
+               fields={fields}
+               onFilterValueChanged={handleFilterValueChange}
+           />
+           {
+              isloading ? <button onClick={() => clickIem('5')}>select</button> : ''
+           }
+       </div>
     );
 }
 
