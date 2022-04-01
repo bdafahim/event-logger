@@ -17,9 +17,6 @@ function QuerySelector() {
                fields={fields}
                onFilterValueChanged={handleFilterValueChange}
            />
-           {
-              isloading ? <button onClick={() => clickIem('5')}>select</button> : ''
-           }
        </div>
     );
 }
