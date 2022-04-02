@@ -38,7 +38,7 @@ const dimensions = {
 
 export default function App() {
     return (
-        <div className="App">
+        <div className="App" style={{background: "black"}}>
             <MultilineChart
                 data={[portfolioData, schcData, vcitData]}
                 dimensions={dimensions}
