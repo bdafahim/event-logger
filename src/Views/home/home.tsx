@@ -17,10 +17,10 @@ function Home () {
     }
 
     return (
-        <div style={{justifyContent: "flex-start"}}>
-            <Button variant="primary" style={{marginRight: "20px"}} onClick={goToQuerySelect}>Chart</Button>
+        <div className="d-flex justify-content-around" style={{marginTop: "30px"}}>
+            <Button variant="primary" onClick={ goToBarChart}>BarChart</Button>
+            <Button variant="primary"  onClick={goToQuerySelect}>Chart</Button>
             <button onClick={ goToMultiselect}>Dummy</button>
-            <button onClick={ goToBarChart}>BarChart</button>
             <Button variant="primary">Primary</Button>
         </div>
     )

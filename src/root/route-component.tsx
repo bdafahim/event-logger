@@ -8,7 +8,7 @@ import BasicBarChart from "../Views/d3-graphs/bar-chart/bar-chart";
 function RouteComponent() {
     return (
         <Routes>
-            <Route path='/' element={<Home/>}/>
+            <Route path='/home' element={<Home/>}/>
             <Route path='/query' element={<QuerySelector/>}/>
             <Route path='/select' element={<MultiSelect/>}/>
             <Route path='/bar' element={<BasicBarChart/>}/>
