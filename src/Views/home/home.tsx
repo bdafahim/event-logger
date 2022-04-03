@@ -5,23 +5,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home () {
     const navigate = useNavigate();
-    const goToQuerySelect = () => {
-        navigate("/select");
+    const goToPieChart = () => {
+        navigate("/pie");
     };
 
-    function goToMultiselect() {
-        navigate("/query")
+    function goToSunburstChart() {
+        navigate("/sun");
     }
     function goToBarChart() {
-        navigate("/bar")
+        navigate("/bar");
+    }
+
+    function goToHeatChart() {
+        navigate("/heat");
     }
 
     return (
         <div className="d-flex justify-content-around" style={{marginTop: "30px"}}>
-            <Button variant="primary" onClick={ goToBarChart}>BarChart</Button>
-            <Button variant="primary"  onClick={goToQuerySelect}>Chart</Button>
-            <button onClick={ goToMultiselect}>Dummy</button>
-            <Button variant="primary">Primary</Button>
+            <Button variant="primary" onClick={ goToBarChart}>Bar Chart</Button>
+            <Button variant="primary"  onClick={goToPieChart}>Pie Chart</Button>
+            <Button variant="primary" onClick={ goToSunburstChart}>SunBurst Chart</Button>
+            <Button variant="primary" onClick={goToHeatChart}>Heat Chart</Button>
         </div>
     )
 }
