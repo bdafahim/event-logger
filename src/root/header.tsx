@@ -10,6 +10,7 @@ function Header() {
                     <Nav className="me-auto">
                         <Nav.Link href={'/home'}>Home</Nav.Link>
                         <Nav.Link href={'/home'}>Chart</Nav.Link>
+                        <Nav.Link href={'/query-builder'}>Query Builder</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
