@@ -9,6 +9,7 @@ import SunburstChart from "../Views/d3-graphs/sunburst-chart/sunburst-chart";
 import HeatChart from "../Views/d3-graphs/heat-chart/heat-chart";
 import {QueryBuilder} from "@material-ui/icons";
 import ReactAwesomeQueryBuilder from "../Views/react-awesome-query-builder/react-awesome-query-builder";
+import PieChartDeviceType from "../Views/amplitude-graphs/pie-chart-device-type";
 
 function RouteComponent() {
     return (
@@ -20,6 +21,7 @@ function RouteComponent() {
             <Route path='/sun' element={<SunburstChart/>}/>
             <Route path='/heat' element={<HeatChart/>}/>
             <Route path='/query-builder' element={<ReactAwesomeQueryBuilder/>}/>
+            <Route path='/device-type' element={<PieChartDeviceType/>}/>
 
             <Route path='/query' element={<QuerySelector/>}/>
             <Route path='/select' element={<MultiSelect/>}/>

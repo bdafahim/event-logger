@@ -4,7 +4,7 @@ import Plot from 'react-plotly.js';
 export default function PieChart () {
     let graph1 = {
         data: [
-            {value: [20, 50, 20, 5, 5], labels: ['BD', 'India', 'Pakistan', 'Nepal'], type: 'pie'},
+            {values: [20, 50, 20, 10], labels: ['BD', 'India', 'Pakistan', 'Nepal'], type: 'pie'},
         ],
         layout: {
             height: 700,

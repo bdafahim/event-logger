@@ -20,8 +20,13 @@ function Home () {
         navigate("/heat");
     }
 
+    function goToDeviceType() {
+        navigate("/device-type");
+    }
+
     return (
         <div className="d-flex justify-content-around" style={{marginTop: "30px"}}>
+            <Button variant="primary" onClick={ goToDeviceType}>Device Type</Button>
             <Button variant="primary" onClick={ goToBarChart}>Bar Chart</Button>
             <Button variant="primary"  onClick={goToPieChart}>Pie Chart</Button>
             <Button variant="primary" onClick={ goToSunburstChart}>SunBurst Chart</Button>
