@@ -12,6 +12,9 @@ import ReactAwesomeQueryBuilder from "../Views/react-awesome-query-builder/react
 import PieChartDeviceType from "../Views/amplitude-graphs/pie-chart-device-type";
 import PieChartDeviceVersion from "../Views/amplitude-graphs/pie-chart-device-version";
 import BarChartCheckIn from "../Views/amplitude-graphs/bar-chart-check-in";
+import LineChartResetPassword from "../Views/amplitude-graphs/line-chart-reset-password";
+import LoginLogout from "../Views/amplitude-graphs/login-logout";
+import ErrorComparison from "../Views/amplitude-graphs/error-comparison";
 
 function RouteComponent() {
     return (
@@ -26,6 +29,9 @@ function RouteComponent() {
             <Route path='/device-type' element={<PieChartDeviceType/>}/>
             <Route path='/version' element={<PieChartDeviceVersion/>}/>
             <Route path='/checkin' element={<BarChartCheckIn/>}/>
+            <Route path='/reset' element={<LineChartResetPassword/>}/>
+            <Route path='/login-logout' element={<LoginLogout/>}/>
+                <Route path='/error' element={<ErrorComparison/>}/>
 
             <Route path='/query' element={<QuerySelector/>}/>
             <Route path='/select' element={<MultiSelect/>}/>
