@@ -46,11 +46,11 @@ function Home () {
 
     return (
         <div className="d-flex justify-content-around" style={{marginTop: "30px"}}>
-            <Button variant="primary" onClick={ goToDeviceType}>Device Type</Button>
-            <Button variant="primary" onClick={ goToDeviceVersion}>Device Version</Button>
-            <Button variant="primary" onClick={ resetPassword}>Reset Password</Button>
             <Button variant="primary" onClick={ loginLogout}>Compare attendance</Button>
             <Button variant="primary" onClick={ errorComparison}>Error Comparison</Button>
+            <Button variant="primary" onClick={ resetPassword}>Reset Password</Button>
+            <Button variant="primary" onClick={ goToDeviceType}>Device Type</Button>
+            <Button variant="primary" onClick={ goToDeviceVersion}>Device Version</Button>
 
 
             {/*<Button variant="primary" onClick={goToCheckin}>Check In</Button>*/}

@@ -7,6 +7,7 @@ export default function LineChartResetPassword() {
         y: [16,	4,	8,	13,	22,	53,	28,	15,	5,	11,	66,	42,	59,	38,	37,	7,	8,	43,	34,	27,	24,	21,	4,	13,	60,	54,	38,	47,	40,	6,	17],
         type: 'scatter',
         mode: 'lines+markers',
+        name: 'Reset Password'
     };
 
     const trace2 = {
@@ -14,6 +15,7 @@ export default function LineChartResetPassword() {
         y: [2,	1,	1,	4,	1,	14,	20,	13,	5,	7,	24,	16,	17,	16,	24,	4,	1,	16,	15,	8,	6,	5,	1,	4,	17,	11,	11,	19,	25,	3,	15],
         type: 'scatter',
         mode: 'lines+markers',
+        name: 'Password Error'
     };
     const data = [trace1, trace2];
 
