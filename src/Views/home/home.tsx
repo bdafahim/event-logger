@@ -43,14 +43,26 @@ function Home () {
     function errorComparison() {
         navigate("/error")
     }
+    function expenseComparison() {
+        navigate("/expense")
+    }
+    function expenseComparisonBar() {
+        navigate("/expense-bar")
+    }
+    function compareAteendanceBar() {
+        navigate("/compare-attendance")
+    }
 
     return (
         <div className="d-flex justify-content-around" style={{marginTop: "30px"}}>
-            <Button variant="primary" onClick={ loginLogout}>Compare attendance</Button>
-            <Button variant="primary" onClick={ errorComparison}>Error Comparison</Button>
-            <Button variant="primary" onClick={ resetPassword}>Reset Password</Button>
+            <Button variant="primary" onClick={ loginLogout}>Compare Attendance</Button>
+            <Button variant="primary" onClick={ compareAteendanceBar}>Compare Attendance Bar</Button>
+            <Button variant="primary" onClick={ expenseComparison}>Expense Comparisons</Button>
+            <Button variant="primary" onClick={ expenseComparisonBar}>Expense Comparisons Bar</Button>
             <Button variant="primary" onClick={ goToDeviceType}>Device Type</Button>
             <Button variant="primary" onClick={ goToDeviceVersion}>Device Version</Button>
+            <Button variant="primary" onClick={ errorComparison}>Error Comparison</Button>
+            <Button variant="primary" onClick={ resetPassword}>Reset Password</Button>
 
 
             {/*<Button variant="primary" onClick={goToCheckin}>Check In</Button>*/}

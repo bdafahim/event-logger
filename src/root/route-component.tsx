@@ -15,6 +15,9 @@ import BarChartCheckIn from "../Views/amplitude-graphs/bar-chart-check-in";
 import LineChartResetPassword from "../Views/amplitude-graphs/line-chart-reset-password";
 import LoginLogout from "../Views/amplitude-graphs/login-logout";
 import ErrorComparison from "../Views/amplitude-graphs/error-comparison";
+import ExpenaeComparisonChart from "../Views/amplitude-graphs/expenae-comparison-chart";
+import ExpenseComparisonBarChart from "../Views/amplitude-graphs/expense-comparison-bar-chart";
+import CompareAttendenceBar from "../Views/amplitude-graphs/compare-attendence-bar";
 
 function RouteComponent() {
     return (
@@ -31,7 +34,10 @@ function RouteComponent() {
             <Route path='/checkin' element={<BarChartCheckIn/>}/>
             <Route path='/reset' element={<LineChartResetPassword/>}/>
             <Route path='/login-logout' element={<LoginLogout/>}/>
-                <Route path='/error' element={<ErrorComparison/>}/>
+            <Route path='/compare-attendance' element={<CompareAttendenceBar/>}/>
+            <Route path='/error' element={<ErrorComparison/>}/>
+            <Route path='/expense' element={<ExpenaeComparisonChart/>}/>
+            <Route path='/expense-bar' element={<ExpenseComparisonBarChart/>}/>
 
             <Route path='/query' element={<QuerySelector/>}/>
             <Route path='/select' element={<MultiSelect/>}/>
